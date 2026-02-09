@@ -246,7 +246,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
         echo -e "${YELLOW}  ~/mail-context/ already exists. Skipping.${NC}"
     else
         echo "  mail-context requires a separate repository."
-        echo "  Clone it from: https://github.com/YOUR_USERNAME/mail-context"
+        echo "  Clone it from: https://github.com/marcmekki-dot/mail-context"
         echo ""
         read -p "  Enter the git URL (or press Enter to skip): " MC_URL
         if [ -n "$MC_URL" ]; then

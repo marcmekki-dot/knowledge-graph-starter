@@ -46,7 +46,7 @@ You (Claude Code CLI)
 ## Quick Start
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/knowledge-graph-starter.git
+git clone https://github.com/marcmekki-dot/knowledge-graph-starter.git
 cd knowledge-graph-starter
 ./install.sh
 ```
