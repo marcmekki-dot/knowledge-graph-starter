@@ -1,0 +1,7 @@
+{
+  "name": "email-sync",
+  "description": "Sync emails from your inbox to a personal knowledge graph",
+  "author": {
+    "name": "local"
+  }
+}

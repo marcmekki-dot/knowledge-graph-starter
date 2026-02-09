@@ -1,0 +1,43 @@
+# Email to Knowledge Graph Configuration
+
+# Email settings
+email:
+  address: ""  # Your email address (set during install)
+  imap_server: "imap.gmail.com"  # Your IMAP server
+  imap_port: 993
+  keychain_service: "email-to-kg"
+
+# Anthropic API settings
+anthropic:
+  model: "claude-3-haiku-20240307"
+  keychain_service: "anthropic"
+  keychain_account: "api_key"
+
+# Knowledge graph paths
+paths:
+  personal_dir: "~/personal"
+  state_dir: "~/email-to-kg/.email-sync-state"
+
+# Sync settings
+sync:
+  max_emails: 100
+  days_lookback: 14
+
+# Email filters (applied before classification to save API calls)
+filters:
+  mode: "allowlist"  # "blocklist" = skip matching, "allowlist" = only process matching
+
+  # Domains to filter
+  domains:
+    # Add your important domains here, e.g.:
+    # - "yourcompany.com"
+    # - "client.com"
+
+  # Exact email addresses to filter
+  addresses:
+    # - "no-reply@accounts.google.com"
+
+  # Regex patterns to match against From header
+  patterns:
+    # - "^noreply@"
+    # - "newsletter"

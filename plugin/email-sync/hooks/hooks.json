@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/email-to-kg/main.py check 2>/dev/null || echo '{\"status\": \"not_configured\"}'",
+            "timeout": 30000
+          }
+        ]
+      }
+    ]
+  }
+}
